@@ -6,8 +6,8 @@ A **'DataService'** layer implemented with [PromiseKit] on the top of [Moya] wit
   - To logically group, isolate and modify the collection of network requests
   - To strictly bind the targets with their providers
   - To use the power of PromiseKit
-        - Implement any custom desired generic functionality at any step of the execution
-        - Custom error handling and propagation
+    * Implement any custom desired generic functionality at any step of the execution
+    * Custom error handling and propagation
     ##### Extra functionalities
     - Conditionally re-try a request
     - Response serialization (or implement your own custom serialization)
