@@ -12,6 +12,8 @@ A **'DataService'** layer implemented with [PromiseKit] on the top of [Moya] wit
     - Conditionally re-try a request
     - Response serialization (or implement your own custom serialization)
     - Remote Sample Data implementation
+    - Provides an example Public Key Pinning implementation on Alamofire 
+
 # Usage
 `Source files available. Import the folder that is in the Source into your project.
 No pod for now`
@@ -54,8 +56,7 @@ carDataService.getCar("someId").then{carString in
     //UIActivityIndicatorView.stopAnimating()
 }
 ```
-**See example project to see more of the abilities**
-``
+**Check example project to see more of the abilities**
 
 # License
 MIT
