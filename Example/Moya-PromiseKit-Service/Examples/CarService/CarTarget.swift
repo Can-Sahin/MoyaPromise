@@ -7,3 +7,68 @@
 //
 
 import Foundation
+import Moya
+import Alamofire
+
+public enum CarTarget{
+    case Car(String)
+    case License(String,Int)
+    case Wheels
+}
+
+extension CarTarget: TargetType {
+    public var baseURL: URL { return URL(string: "{YOUR_BASE_URL}")! }
+
+    
+    public var method: Moya.Method {
+        switch self {
+        case .Car:
+            return .get
+        default:
+            return .get
+        }
+        
+    }
+    
+    // Path will be added to BaseUrl
+    public var path: String {
+        switch self {
+        case .Car:
+            return ""
+        default:
+            return ""
+        }
+    }
+    public var headers: [String: String]? {
+        return nil
+    }
+    
+    public var parameterEncoding : ParameterEncoding{
+        switch self {
+        case .Car:
+            return URLEncoding.default
+        default:
+            return  URLEncoding.default
+        }
+    }
+    
+    
+    public var parameters: [String: Any] {
+        switch self {
+        default:
+            return [:]
+        }
+    }
+    public var task: Task {
+        return .requestParameters(parameters: self.parameters, encoding: self.parameterEncoding)
+    }
+    
+    public var validate: Bool{
+        return true
+    }
+    
+    public var sampleData: Data {
+        return "Sample Data".data(using: String.Encoding.utf8)!
+        
+    }
+}

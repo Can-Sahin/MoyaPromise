@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Alamofire
+import PromiseKit
+import Moya
+
+
+// An example for a customized data service.
+public class CustomCarDataService: CustomDataService<CarTarget.ConvertibleTo>{
+    
+    public func getCar(_ id:String) -> Promise<String>  {
+        return self.request(target: CarTarget.Car(id).wrap()).asString()
+    }
+    
+}

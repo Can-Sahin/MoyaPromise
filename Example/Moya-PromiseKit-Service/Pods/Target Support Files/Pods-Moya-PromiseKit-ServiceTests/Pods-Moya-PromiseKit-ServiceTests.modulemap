@@ -1,0 +1,6 @@
+framework module Pods_Moya_PromiseKit_ServiceTests {
+  umbrella header "Pods-Moya-PromiseKit-ServiceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
