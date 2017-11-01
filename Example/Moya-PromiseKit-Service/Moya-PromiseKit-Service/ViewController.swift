@@ -72,29 +72,5 @@ class ViewController: UIViewController {
             //UIActivityIndicatorView.stopAnimating()
         }
     }
-    
-    func readMeExamples(){
-        DefaultDataService().request(target: CarTarget.Car("carId")).asStrin().then{carString in
-            print(carString)
-        }.catch{error in
-            print(error)
-        }
-        
-        let carDataService = CarDataService()
-        carDataService.getCarItem("carId").then{carItem in
-            print(carItem.Name)
-        }.catch{error in
-            print(error)
-        }
-        
-        public class CarDataService: DefaultDataService<CarTarget>{
-            public func getCarItem(_ id:String) -> Promise<DummyCarItem>  {
-                return self.request(target: CarTarget.Car(id)).asParsedObject()
-            }
-            public func getDriver(_ carId:String ) -> Promise<String>  {
-                return self.request(target: CarTarget.Driver(carId)).asString()
-            }
-        }
-    }
 }
 
