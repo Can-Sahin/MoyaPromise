@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B4BCF6C1FA9F205008F8370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF6B1FA9F205008F8370 /* AppDelegate.swift */; };
+		5B4BCF6E1FA9F205008F8370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF6D1FA9F205008F8370 /* ViewController.swift */; };
+		5B4BCF711FA9F205008F8370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF6F1FA9F205008F8370 /* Main.storyboard */; };
+		5B4BCF731FA9F205008F8370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF721FA9F205008F8370 /* Assets.xcassets */; };
+		5B4BCF761FA9F205008F8370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF741FA9F205008F8370 /* LaunchScreen.storyboard */; };
+		5B4BCF811FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF801FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B4BCF7D1FA9F206008F8370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B4BCF601FA9F205008F8370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B4BCF671FA9F205008F8370;
+			remoteInfo = "Moya-PromiseKit-Service";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B4BCF681FA9F205008F8370 /* Moya-PromiseKit-Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya-PromiseKit-Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4BCF6B1FA9F205008F8370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B4BCF6D1FA9F205008F8370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B4BCF701FA9F205008F8370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B4BCF721FA9F205008F8370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B4BCF751FA9F205008F8370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B4BCF771FA9F205008F8370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4BCF7C1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moya-PromiseKit-ServiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4BCF801FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_PromiseKit_ServiceTests.swift; sourceTree = "<group>"; };
+		5B4BCF821FA9F206008F8370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B4BCF651FA9F205008F8370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4BCF791FA9F206008F8370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B4BCF5F1FA9F205008F8370 = {
+			isa = PBXGroup;
+			children = (
+				5B4BCF6A1FA9F205008F8370 /* Moya-PromiseKit-Service */,
+				5B4BCF7F1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests */,
+				5B4BCF691FA9F205008F8370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B4BCF691FA9F205008F8370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B4BCF681FA9F205008F8370 /* Moya-PromiseKit-Service.app */,
+				5B4BCF7C1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B4BCF6A1FA9F205008F8370 /* Moya-PromiseKit-Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B4BCF6B1FA9F205008F8370 /* AppDelegate.swift */,
+				5B4BCF6D1FA9F205008F8370 /* ViewController.swift */,
+				5B4BCF6F1FA9F205008F8370 /* Main.storyboard */,
+				5B4BCF721FA9F205008F8370 /* Assets.xcassets */,
+				5B4BCF741FA9F205008F8370 /* LaunchScreen.storyboard */,
+				5B4BCF771FA9F205008F8370 /* Info.plist */,
+			);
+			path = "Moya-PromiseKit-Service";
+			sourceTree = "<group>";
+		};
+		5B4BCF7F1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B4BCF801FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift */,
+				5B4BCF821FA9F206008F8370 /* Info.plist */,
+			);
+			path = "Moya-PromiseKit-ServiceTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B4BCF671FA9F205008F8370 /* Moya-PromiseKit-Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4BCF851FA9F206008F8370 /* Build configuration list for PBXNativeTarget "Moya-PromiseKit-Service" */;
+			buildPhases = (
+				5B4BCF641FA9F205008F8370 /* Sources */,
+				5B4BCF651FA9F205008F8370 /* Frameworks */,
+				5B4BCF661FA9F205008F8370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moya-PromiseKit-Service";
+			productName = "Moya-PromiseKit-Service";
+			productReference = 5B4BCF681FA9F205008F8370 /* Moya-PromiseKit-Service.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B4BCF7B1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4BCF881FA9F206008F8370 /* Build configuration list for PBXNativeTarget "Moya-PromiseKit-ServiceTests" */;
+			buildPhases = (
+				5B4BCF781FA9F206008F8370 /* Sources */,
+				5B4BCF791FA9F206008F8370 /* Frameworks */,
+				5B4BCF7A1FA9F206008F8370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B4BCF7E1FA9F206008F8370 /* PBXTargetDependency */,
+			);
+			name = "Moya-PromiseKit-ServiceTests";
+			productName = "Moya-PromiseKit-ServiceTests";
+			productReference = 5B4BCF7C1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B4BCF601FA9F205008F8370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Can Sahin";
+				TargetAttributes = {
+					5B4BCF671FA9F205008F8370 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					5B4BCF7B1FA9F206008F8370 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B4BCF671FA9F205008F8370;
+					};
+				};
+			};
+			buildConfigurationList = 5B4BCF631FA9F205008F8370 /* Build configuration list for PBXProject "Moya-PromiseKit-Service" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B4BCF5F1FA9F205008F8370;
+			productRefGroup = 5B4BCF691FA9F205008F8370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B4BCF671FA9F205008F8370 /* Moya-PromiseKit-Service */,
+				5B4BCF7B1FA9F206008F8370 /* Moya-PromiseKit-ServiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B4BCF661FA9F205008F8370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4BCF761FA9F205008F8370 /* LaunchScreen.storyboard in Resources */,
+				5B4BCF731FA9F205008F8370 /* Assets.xcassets in Resources */,
+				5B4BCF711FA9F205008F8370 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4BCF7A1FA9F206008F8370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B4BCF641FA9F205008F8370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4BCF6E1FA9F205008F8370 /* ViewController.swift in Sources */,
+				5B4BCF6C1FA9F205008F8370 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4BCF781FA9F206008F8370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4BCF811FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B4BCF7E1FA9F206008F8370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B4BCF671FA9F205008F8370 /* Moya-PromiseKit-Service */;
+			targetProxy = 5B4BCF7D1FA9F206008F8370 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B4BCF6F1FA9F205008F8370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B4BCF701FA9F205008F8370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B4BCF741FA9F205008F8370 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B4BCF751FA9F205008F8370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B4BCF831FA9F206008F8370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B4BCF841FA9F206008F8370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B4BCF861FA9F206008F8370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Moya-PromiseKit-Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Can-Sahin.Moya-PromiseKit-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B4BCF871FA9F206008F8370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Moya-PromiseKit-Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Can-Sahin.Moya-PromiseKit-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B4BCF891FA9F206008F8370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Moya-PromiseKit-ServiceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Can-Sahin.Moya-PromiseKit-ServiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moya-PromiseKit-Service.app/Moya-PromiseKit-Service";
+			};
+			name = Debug;
+		};
+		5B4BCF8A1FA9F206008F8370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Moya-PromiseKit-ServiceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Can-Sahin.Moya-PromiseKit-ServiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moya-PromiseKit-Service.app/Moya-PromiseKit-Service";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B4BCF631FA9F205008F8370 /* Build configuration list for PBXProject "Moya-PromiseKit-Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4BCF831FA9F206008F8370 /* Debug */,
+				5B4BCF841FA9F206008F8370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4BCF851FA9F206008F8370 /* Build configuration list for PBXNativeTarget "Moya-PromiseKit-Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4BCF861FA9F206008F8370 /* Debug */,
+				5B4BCF871FA9F206008F8370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4BCF881FA9F206008F8370 /* Build configuration list for PBXNativeTarget "Moya-PromiseKit-ServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4BCF891FA9F206008F8370 /* Debug */,
+				5B4BCF8A1FA9F206008F8370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B4BCF601FA9F205008F8370 /* Project object */;
+}
