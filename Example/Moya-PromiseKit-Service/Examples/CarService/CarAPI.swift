@@ -10,13 +10,13 @@ import Foundation
 import Moya
 import Alamofire
 
-public enum CarTarget{
+public enum CarAPI{
     case Car(String)
     case License(String,Int)
     case Wheels
 }
 
-extension CarTarget: TargetType {
+extension CarAPI: TargetType {
     public var baseURL: URL { return URL(string: "{YOUR_BASE_URL}")! }
 
     

@@ -13,10 +13,10 @@ import Moya
 
 
 // An example for a customized data service.
-public class CustomCarDataService: CustomDataService<CarTarget.ConvertibleTo>{
+public class CustomCarDataService: CustomDataService<CarAPI.ConvertibleTo>{
     
     public func getCar(_ id:String) -> Promise<String>  {
-        return self.request(target: CarTarget.Car(id).wrap()).asString()
+        return self.request(target: CarAPI.Car(id).wrap()).asString()
     }
     
 }

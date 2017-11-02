@@ -15,11 +15,11 @@ A **'DataService'** layer implemented with [PromiseKit] on the top of [Moya] wit
     - Provides an example Public Key Pinning implementation on Alamofire 
 
 # Usage
-`Source files available. Import the folder that is in the Source into your project.
+`Source files available. Import the folder that is in the Source into your project and replace "YOUR_*" strings with your values and you are good to go.
 No pod for now`
 
 # Example
-Make **'getCar'** request as response parsed to the object
+Make **getCarItem** request where the response is serialized to an object
 ```swift
 let carDataService = CarDataService()
 carDataService.getCarItem("carId").then{carItem in
@@ -31,12 +31,12 @@ carDataService.getCarItem("carId").then{carItem in
 
 where **CarDataService** is
 ```swift
-public class CarDataService: DefaultDataService<CarTarget>{
+public class CarDataService: DefaultDataService<CarAPI>{
     public func getCarItem(_ id:String) -> Promise<DummyCarItem>  {
-        return self.request(target: CarTarget.Car(id)).asParsedObject()
+        return self.request(target: CarAPI.Car(id)).asParsedObject()
     }
     public func getDriver(_ carId:String ) -> Promise<String>  {
-        return self.request(target: CarTarget.Driver(carId)).asString()
+        return self.request(target: CarAPI.Driver(carId)).asString()
     }
 }
 ```
@@ -56,7 +56,7 @@ carDataService.getCar("someId").then{carString in
     //UIActivityIndicatorView.stopAnimating()
 }
 ```
-**Check example project to see more of the abilities**
+**Check the example project to see more of the abilities**
 
 # License
 MIT

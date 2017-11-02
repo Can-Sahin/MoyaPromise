@@ -46,8 +46,8 @@ public class SSLPinningDataService<Target: TargetType> : DataServiceProtocol {
 }
 
 // Initialize from your concrete class
-public class SomeSSLPinningDataService: SSLPinningDataService<CarTarget>{
+public class SomeSSLPinningDataService: SSLPinningDataService<CarAPI>{
     public func getSomething() -> Promise<String>{
-        return self.request(target: CarTarget.Wheels).asString()
+        return self.request(target: CarAPI.Wheels).asString()
     }
 }

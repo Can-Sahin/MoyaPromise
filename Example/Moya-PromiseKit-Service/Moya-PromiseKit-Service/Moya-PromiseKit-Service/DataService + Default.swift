@@ -18,7 +18,7 @@ public struct DataServiceProperties{
 /// Concrete class for default implementations
 public class DefaultDataService<Target: TargetType> : DataServiceProtocol {
     public typealias MoyaTarget = Target
-    
+
     public var moyaProvider: MoyaProvider<Target>
     
     init(){

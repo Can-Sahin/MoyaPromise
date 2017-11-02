@@ -31,8 +31,8 @@
 		5B4BCFA31FA9F30D008F8370 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF931FA9F30C008F8370 /* Serialization.swift */; };
 		5B4BCFA71FA9F777008F8370 /* CarDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA61FA9F777008F8370 /* CarDataService.swift */; };
 		5B4BCFA81FA9F777008F8370 /* CarDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA61FA9F777008F8370 /* CarDataService.swift */; };
-		5B4BCFAA1FA9F7C1008F8370 /* CarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA91FA9F7C1008F8370 /* CarTarget.swift */; };
-		5B4BCFAB1FA9F7C1008F8370 /* CarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA91FA9F7C1008F8370 /* CarTarget.swift */; };
+		5B4BCFAA1FA9F7C1008F8370 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */; };
+		5B4BCFAB1FA9F7C1008F8370 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */; };
 		5B4BCFAE1FA9FB41008F8370 /* SomeSSLPinningDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFAD1FA9FB41008F8370 /* SomeSSLPinningDataService.swift */; };
 		5B4BCFAF1FA9FB41008F8370 /* SomeSSLPinningDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFAD1FA9FB41008F8370 /* SomeSSLPinningDataService.swift */; };
 		5B4BCFB21FAA000D008F8370 /* CustomDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFB11FAA000D008F8370 /* CustomDataService.swift */; };
@@ -75,7 +75,7 @@
 		5B4BCF921FA9F30C008F8370 /* SampleDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataService.swift; sourceTree = "<group>"; };
 		5B4BCF931FA9F30C008F8370 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		5B4BCFA61FA9F777008F8370 /* CarDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataService.swift; sourceTree = "<group>"; };
-		5B4BCFA91FA9F7C1008F8370 /* CarTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTarget.swift; sourceTree = "<group>"; };
+		5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
 		5B4BCFAD1FA9FB41008F8370 /* SomeSSLPinningDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeSSLPinningDataService.swift; sourceTree = "<group>"; };
 		5B4BCFB11FAA000D008F8370 /* CustomDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataService.swift; sourceTree = "<group>"; };
 		5B4BCFB41FAA0174008F8370 /* CustomOAuthCarTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOAuthCarTarget.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				5B4BCFA61FA9F777008F8370 /* CarDataService.swift */,
-				5B4BCFA91FA9F7C1008F8370 /* CarTarget.swift */,
+				5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */,
 			);
 			path = CarService;
 			sourceTree = "<group>";
@@ -446,7 +446,7 @@
 				5B4BCF981FA9F30D008F8370 /* MoyaProvider+Promise.swift in Sources */,
 				5B4BCFB81FAA058D008F8370 /* CustomCarService.swift in Sources */,
 				5B4BCF9C1FA9F30D008F8370 /* Protocols.swift in Sources */,
-				5B4BCFAA1FA9F7C1008F8370 /* CarTarget.swift in Sources */,
+				5B4BCFAA1FA9F7C1008F8370 /* CarAPI.swift in Sources */,
 				5B4BCF961FA9F30D008F8370 /* DataServiceExtensions.swift in Sources */,
 				5B4BCF6C1FA9F205008F8370 /* AppDelegate.swift in Sources */,
 				5B4BCFB21FAA000D008F8370 /* CustomDataService.swift in Sources */,
@@ -465,7 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4BCF991FA9F30D008F8370 /* MoyaProvider+Promise.swift in Sources */,
-				5B4BCFAB1FA9F7C1008F8370 /* CarTarget.swift in Sources */,
+				5B4BCFAB1FA9F7C1008F8370 /* CarAPI.swift in Sources */,
 				5B4BCFA31FA9F30D008F8370 /* Serialization.swift in Sources */,
 				5B4BCFA81FA9F777008F8370 /* CarDataService.swift in Sources */,
 				5B4BCF811FA9F206008F8370 /* Moya_PromiseKit_ServiceTests.swift in Sources */,

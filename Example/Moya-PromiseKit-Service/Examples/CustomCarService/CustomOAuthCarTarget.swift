@@ -13,14 +13,15 @@ import Moya
 public protocol CustomCarTargetType: TargetType{
     var someExtraFieldForAllCarTarget: String {get}
 }
-public protocol OAuth2CarTargetType: CustomCarTargetType,TargetConvertible{}
+
+public protocol OAuth2CarAPI: CustomCarTargetType,TargetConvertible{}
 
 
 public protocol OAuth2TargetWrapped: CustomCarTargetType{
     var oAuthToken: String? {get set}
 }
 
-public struct OAuth2Target<T: OAuth2CarTargetType> : OAuth2TargetWrapped, TargetWrapable{
+public struct OAuth2Target<T: OAuth2CarAPI> : OAuth2TargetWrapped, TargetWrapable{
     public typealias WrappedType = T
     public var target: WrappedType
     
@@ -35,8 +36,8 @@ public struct OAuth2Target<T: OAuth2CarTargetType> : OAuth2TargetWrapped, Target
     }
 }
 
-extension CarTarget: OAuth2CarTargetType{
-    public typealias ConvertibleTo = OAuth2Target<CarTarget>
+extension CarAPI: OAuth2CarAPI{
+    public typealias ConvertibleTo = OAuth2Target<CarAPI>
     /// Generates a new object that is not limited by enum. In other words, that can have stored properties like OAuthToken that will be added during the request.
     public func wrap() -> ConvertibleTo{
         return OAuth2Target(from: self)
