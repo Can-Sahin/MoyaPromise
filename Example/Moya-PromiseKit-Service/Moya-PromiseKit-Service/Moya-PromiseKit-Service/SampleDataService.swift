@@ -1,10 +1,10 @@
 //
-//  CustomTargets.swift
-//  IMCFramework
+//  SampleDataService.swift
 //
-//  Created by Can Sahin on 30/10/2017.
+//  Created by Can Sahin on 28/06/2017.
 //  Copyright © 2017 Can Sahin. All rights reserved.
 //
+
 
 import Foundation
 import Alamofire

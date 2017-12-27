@@ -1,9 +1,8 @@
 //
 //  Plugins.swift
-//  GarentaPro
 //
-//  Created by Can Sahin on 10/08/2017.
-//  Copyright © 2017 Mehmet Cakir. All rights reserved.
+//  Created by Can Sahin on 28/06/2017.
+//  Copyright © 2017 Can Sahin. All rights reserved.
 //
 
 import Foundation
