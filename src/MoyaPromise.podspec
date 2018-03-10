@@ -64,6 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
+  s.swift_version = "4.0"
   s.platform     = :ios, "8.0"
   # s.platform     = :ios, "5.0"
 
@@ -91,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MoyaPromise/**/*.{h,m}"
+  s.source_files  = 'MoyaPromise/*.swift'
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
