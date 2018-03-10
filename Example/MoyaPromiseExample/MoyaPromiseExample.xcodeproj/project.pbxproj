@@ -12,14 +12,6 @@
 		5B4BCF711FA9F205008F8370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF6F1FA9F205008F8370 /* Main.storyboard */; };
 		5B4BCF731FA9F205008F8370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF721FA9F205008F8370 /* Assets.xcassets */; };
 		5B4BCF761FA9F205008F8370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4BCF741FA9F205008F8370 /* LaunchScreen.storyboard */; };
-		5B4BCF941FA9F30D008F8370 /* DataService + Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF8C1FA9F30C008F8370 /* DataService + Default.swift */; };
-		5B4BCF961FA9F30D008F8370 /* DataServiceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF8D1FA9F30C008F8370 /* DataServiceExtensions.swift */; };
-		5B4BCF981FA9F30D008F8370 /* MoyaProvider+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF8E1FA9F30C008F8370 /* MoyaProvider+Promise.swift */; };
-		5B4BCF9A1FA9F30D008F8370 /* Plugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF8F1FA9F30C008F8370 /* Plugins.swift */; };
-		5B4BCF9C1FA9F30D008F8370 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF901FA9F30C008F8370 /* Protocols.swift */; };
-		5B4BCF9E1FA9F30D008F8370 /* RequestPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF911FA9F30C008F8370 /* RequestPolicy.swift */; };
-		5B4BCFA01FA9F30D008F8370 /* SampleDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF921FA9F30C008F8370 /* SampleDataService.swift */; };
-		5B4BCFA21FA9F30D008F8370 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCF931FA9F30C008F8370 /* Serialization.swift */; };
 		5B4BCFA71FA9F777008F8370 /* CarDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA61FA9F777008F8370 /* CarDataService.swift */; };
 		5B4BCFAA1FA9F7C1008F8370 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */; };
 		5B4BCFAE1FA9FB41008F8370 /* SomeSSLPinningDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFAD1FA9FB41008F8370 /* SomeSSLPinningDataService.swift */; };
@@ -272,6 +264,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoyaPromiseExample/Pods-MoyaPromiseExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/MoyaPromise/MoyaPromise.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
@@ -279,6 +272,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaPromise.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
@@ -311,19 +305,11 @@
 			files = (
 				5B4BCF6E1FA9F205008F8370 /* ViewController.swift in Sources */,
 				5B4BCFB51FAA0174008F8370 /* CustomOAuthCarTarget.swift in Sources */,
-				5B4BCF981FA9F30D008F8370 /* MoyaProvider+Promise.swift in Sources */,
 				5B4BCFB81FAA058D008F8370 /* CustomCarService.swift in Sources */,
-				5B4BCF9C1FA9F30D008F8370 /* Protocols.swift in Sources */,
 				5B4BCFAA1FA9F7C1008F8370 /* CarAPI.swift in Sources */,
-				5B4BCF961FA9F30D008F8370 /* DataServiceExtensions.swift in Sources */,
 				5B4BCF6C1FA9F205008F8370 /* AppDelegate.swift in Sources */,
 				5B4BCFB21FAA000D008F8370 /* CustomDataService.swift in Sources */,
-				5B4BCF9A1FA9F30D008F8370 /* Plugins.swift in Sources */,
-				5B4BCFA01FA9F30D008F8370 /* SampleDataService.swift in Sources */,
-				5B4BCF941FA9F30D008F8370 /* DataService + Default.swift in Sources */,
 				5B4BCFA71FA9F777008F8370 /* CarDataService.swift in Sources */,
-				5B4BCFA21FA9F30D008F8370 /* Serialization.swift in Sources */,
-				5B4BCF9E1FA9F30D008F8370 /* RequestPolicy.swift in Sources */,
 				5B4BCFAE1FA9FB41008F8370 /* SomeSSLPinningDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

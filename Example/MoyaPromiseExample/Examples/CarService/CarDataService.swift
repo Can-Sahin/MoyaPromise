@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import PromiseKit
 import Moya
+import MoyaPromise
 
 // Subclass of default
 public class CarDataService: DefaultDataService<CarAPI>{

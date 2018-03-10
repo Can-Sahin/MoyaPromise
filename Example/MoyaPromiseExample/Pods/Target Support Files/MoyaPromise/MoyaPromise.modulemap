@@ -1,0 +1,6 @@
+framework module MoyaPromise {
+  umbrella header "MoyaPromise-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,6 +9,7 @@
 import Foundation
 import PromiseKit
 import Moya
+import MoyaPromise
 
 /*
  You can create custom data service to modiy the operational steps outside of the application layer

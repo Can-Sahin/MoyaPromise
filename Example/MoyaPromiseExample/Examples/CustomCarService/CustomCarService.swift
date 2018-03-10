@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import PromiseKit
 import Moya
+import MoyaPromise
 
 
 // An example for a customized data service.

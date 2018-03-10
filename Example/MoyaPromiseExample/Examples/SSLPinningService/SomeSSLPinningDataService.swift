@@ -10,6 +10,8 @@ import Foundation
 import Moya
 import PromiseKit
 import Alamofire
+import MoyaPromise
+
 /*
  Make your own concrete DataService from DataServiceProtocol and implement SSL PublicKey pinning at init
  */

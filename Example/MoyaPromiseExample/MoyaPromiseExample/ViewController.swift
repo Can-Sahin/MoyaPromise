@@ -8,6 +8,7 @@
 
 import UIKit
 import PromiseKit
+import MoyaPromise
 
 class ViewController: UIViewController {
     let dataService = CarDataService()

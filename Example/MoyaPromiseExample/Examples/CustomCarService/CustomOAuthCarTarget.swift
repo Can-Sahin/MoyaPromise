@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import Moya
+import MoyaPromise
 
 public protocol CustomCarTargetType: TargetType{
     var someExtraFieldForAllCarTarget: String {get}
