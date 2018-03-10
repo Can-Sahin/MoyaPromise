@@ -11,19 +11,19 @@ import Moya
 
 
 // Copy of Moya.CancellableWrapper class. Moya made it internal so this is the identical copy for the module
-internal class CancellableWrapper: Cancellable {
+public class CancellableWrapper: Cancellable {
     internal var innerCancellable: Cancellable = SimpleCancellable()
     
-    var isCancelled: Bool { return innerCancellable.isCancelled }
+    public var isCancelled: Bool { return innerCancellable.isCancelled }
     
-    internal func cancel() {
+    public func cancel() {
         innerCancellable.cancel()
     }
 }
 // Copy of Moya.SimpleCancellable class. Moya made it internal so this is the identical copy for the module
-internal class SimpleCancellable: Cancellable {
-    var isCancelled = false
-    func cancel() {
+public class SimpleCancellable: Cancellable {
+    public var isCancelled = false
+    public func cancel() {
         isCancelled = true
     }
 }

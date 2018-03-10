@@ -16,7 +16,7 @@ public struct DataServiceProperties{
 }
 
 /// Concrete class for default implementations
-public class DefaultDataService<Target: TargetType> : DataServiceProtocol {
+open class DefaultDataService<Target: TargetType> : DataServiceProtocol {
     public typealias MoyaTarget = Target
 
     public var moyaProvider: MoyaProvider<Target>
@@ -40,7 +40,7 @@ public protocol DataServiceProtocol{
 }
 
 // Default implementations for the protocol
-extension DataServiceProtocol{
+public extension DataServiceProtocol{
     public var retryPolicy: RetryPolicy?{ get{return nil} set{}}
 //    public var retrievePolicy: RetrievePolicy?{ get{return nil} set{}}
 
@@ -195,28 +195,28 @@ extension MoyaCancellablePromise where T: Moya.Response{
 }
 
 extension MoyaCancellablePromise where T: Moya.Response{
-    func asParsedObject<T:Codable>() -> MoyaCancellablePromise<T>{
+    public func asParsedObject<T:Codable>() -> MoyaCancellablePromise<T>{
         return MoyaCancellablePromise<T>(promise: self.promise.then(on: DispatchQueue.global(qos: .background)) { moyaResponse in
             return moyaResponse.responseObject()
         }, cancelToken: self.cancelToken);
     }
     
-    func asString() -> MoyaCancellablePromise<String>{
+    public func asString() -> MoyaCancellablePromise<String>{
         return MoyaCancellablePromise<String>(promise: self.promise.then { moyaResponse in
             return moyaResponse.responseString()
         }, cancelToken: self.cancelToken);
     }
-    func asData() -> MoyaCancellablePromise<Data>{
+    public func asData() -> MoyaCancellablePromise<Data>{
         return MoyaCancellablePromise<Data>(promise: self.promise.then { moyaResponse in
             return moyaResponse.responseData()
         }, cancelToken: self.cancelToken);
     }
-    func asJson() -> MoyaCancellablePromise<Any>{
+    public func asJson() -> MoyaCancellablePromise<Any>{
         return MoyaCancellablePromise<Any>(promise: self.promise.then { moyaResponse in
             return moyaResponse.responseJSON()
         }, cancelToken: self.cancelToken);
     }
-    func asJsonDictionary() -> MoyaCancellablePromise<[String: Any]>{
+    public func asJsonDictionary() -> MoyaCancellablePromise<[String: Any]>{
         return MoyaCancellablePromise<[String: Any]>(promise: self.promise.then { moyaResponse in
             return moyaResponse.responseJsonDictionary()
         }, cancelToken: self.cancelToken);
