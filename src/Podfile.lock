@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - PromiseKit (6.2.1):
+    - PromiseKit/CorePromise (= 6.2.1)
+    - PromiseKit/Foundation (= 6.2.1)
+    - PromiseKit/UIKit (= 6.2.1)
+  - PromiseKit/Alamofire (6.2.1):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.2.1)
+  - PromiseKit/Foundation (6.2.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.2.1):
+    - PromiseKit/CorePromise
+  - Result (3.2.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Moya
+  - PromiseKit
+  - PromiseKit/Alamofire
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  PromiseKit: edaca6f0a7ed73b08c287600537d13867a7fabc7
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+
+PODFILE CHECKSUM: 6ce7cbad9e33e4364abed05e70f3f07be10a349f
+
+COCOAPODS: 1.4.0
