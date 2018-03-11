@@ -29,14 +29,6 @@
 		5B4BCF721FA9F205008F8370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B4BCF751FA9F205008F8370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B4BCF771FA9F205008F8370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B4BCF8C1FA9F30C008F8370 /* DataService + Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataService + Default.swift"; sourceTree = "<group>"; };
-		5B4BCF8D1FA9F30C008F8370 /* DataServiceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceExtensions.swift; sourceTree = "<group>"; };
-		5B4BCF8E1FA9F30C008F8370 /* MoyaProvider+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Promise.swift"; sourceTree = "<group>"; };
-		5B4BCF8F1FA9F30C008F8370 /* Plugins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugins.swift; sourceTree = "<group>"; };
-		5B4BCF901FA9F30C008F8370 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		5B4BCF911FA9F30C008F8370 /* RequestPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPolicy.swift; sourceTree = "<group>"; };
-		5B4BCF921FA9F30C008F8370 /* SampleDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataService.swift; sourceTree = "<group>"; };
-		5B4BCF931FA9F30C008F8370 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		5B4BCFA61FA9F777008F8370 /* CarDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataService.swift; sourceTree = "<group>"; };
 		5B4BCFA91FA9F7C1008F8370 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
 		5B4BCFAD1FA9FB41008F8370 /* SomeSSLPinningDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeSSLPinningDataService.swift; sourceTree = "<group>"; };
@@ -92,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				5B4BCFA41FA9F759008F8370 /* Examples */,
-				5B4BCF8B1FA9F30C008F8370 /* MoyaPromise */,
 				5B4BCF6B1FA9F205008F8370 /* AppDelegate.swift */,
 				5B4BCF6D1FA9F205008F8370 /* ViewController.swift */,
 				5B4BCF6F1FA9F205008F8370 /* Main.storyboard */,
@@ -101,21 +92,6 @@
 				5B4BCF771FA9F205008F8370 /* Info.plist */,
 			);
 			path = MoyaPromiseExample;
-			sourceTree = "<group>";
-		};
-		5B4BCF8B1FA9F30C008F8370 /* MoyaPromise */ = {
-			isa = PBXGroup;
-			children = (
-				5B4BCF8C1FA9F30C008F8370 /* DataService + Default.swift */,
-				5B4BCF8D1FA9F30C008F8370 /* DataServiceExtensions.swift */,
-				5B4BCF8E1FA9F30C008F8370 /* MoyaProvider+Promise.swift */,
-				5B4BCF8F1FA9F30C008F8370 /* Plugins.swift */,
-				5B4BCF901FA9F30C008F8370 /* Protocols.swift */,
-				5B4BCF911FA9F30C008F8370 /* RequestPolicy.swift */,
-				5B4BCF921FA9F30C008F8370 /* SampleDataService.swift */,
-				5B4BCF931FA9F30C008F8370 /* Serialization.swift */,
-			);
-			path = MoyaPromise;
 			sourceTree = "<group>";
 		};
 		5B4BCFA41FA9F759008F8370 /* Examples */ = {
