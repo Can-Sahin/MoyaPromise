@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5B1F0C502054B74D0016A663 /* DataService + Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */; };
-		5B8B9A3320548ACB0082C265 /* MoyaPromise.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5B8B9A3220548ACB0082C265 /* MoyaPromise.podspec */; };
+		5B1F0C5A2054BB660016A663 /* DataServiceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C532054BB650016A663 /* DataServiceExtensions.swift */; };
+		5B1F0C5B2054BB660016A663 /* Plugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C542054BB650016A663 /* Plugins.swift */; };
+		5B1F0C5C2054BB660016A663 /* RequestPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C552054BB660016A663 /* RequestPolicy.swift */; };
+		5B1F0C5D2054BB660016A663 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C562054BB660016A663 /* Serialization.swift */; };
+		5B1F0C5E2054BB660016A663 /* SampleDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C572054BB660016A663 /* SampleDataService.swift */; };
+		5B1F0C5F2054BB660016A663 /* MoyaProvider+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C582054BB660016A663 /* MoyaProvider+Promise.swift */; };
+		5B1F0C602054BB660016A663 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C592054BB660016A663 /* Protocols.swift */; };
 		5BEDD8CE20527AC80038D360 /* MoyaPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BEDD8C420527AC80038D360 /* MoyaPromise.framework */; };
 		5BEDD8D320527AC80038D360 /* MoyaPromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDD8D220527AC80038D360 /* MoyaPromiseTests.swift */; };
 		5BEDD8D520527AC80038D360 /* MoyaPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEDD8C720527AC80038D360 /* MoyaPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,7 +36,13 @@
 		0FF957F0C0184E6C3819E8CB /* Pods_MoyaPromise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6E018656667430D3C671C9 /* Pods-MoyaPromise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaPromise.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaPromise/Pods-MoyaPromise.release.xcconfig"; sourceTree = "<group>"; };
 		5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataService + Default.swift"; sourceTree = "<group>"; };
-		5B8B9A3220548ACB0082C265 /* MoyaPromise.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoyaPromise.podspec; sourceTree = "<group>"; };
+		5B1F0C532054BB650016A663 /* DataServiceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceExtensions.swift; sourceTree = "<group>"; };
+		5B1F0C542054BB650016A663 /* Plugins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugins.swift; sourceTree = "<group>"; };
+		5B1F0C552054BB660016A663 /* RequestPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPolicy.swift; sourceTree = "<group>"; };
+		5B1F0C562054BB660016A663 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		5B1F0C572054BB660016A663 /* SampleDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataService.swift; sourceTree = "<group>"; };
+		5B1F0C582054BB660016A663 /* MoyaProvider+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Promise.swift"; sourceTree = "<group>"; };
+		5B1F0C592054BB660016A663 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		5BEDD8C420527AC80038D360 /* MoyaPromise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEDD8C720527AC80038D360 /* MoyaPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoyaPromise.h; sourceTree = "<group>"; };
 		5BEDD8C820527AC80038D360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +90,6 @@
 		5BEDD8BA20527AC80038D360 = {
 			isa = PBXGroup;
 			children = (
-				5B8B9A3220548ACB0082C265 /* MoyaPromise.podspec */,
 				5BEDD8C620527AC80038D360 /* MoyaPromise */,
 				5BEDD8D120527AC80038D360 /* MoyaPromiseTests */,
 				5BEDD8C520527AC80038D360 /* Products */,
@@ -99,6 +110,13 @@
 		5BEDD8C620527AC80038D360 /* MoyaPromise */ = {
 			isa = PBXGroup;
 			children = (
+				5B1F0C532054BB650016A663 /* DataServiceExtensions.swift */,
+				5B1F0C582054BB660016A663 /* MoyaProvider+Promise.swift */,
+				5B1F0C542054BB650016A663 /* Plugins.swift */,
+				5B1F0C592054BB660016A663 /* Protocols.swift */,
+				5B1F0C552054BB660016A663 /* RequestPolicy.swift */,
+				5B1F0C572054BB660016A663 /* SampleDataService.swift */,
+				5B1F0C562054BB660016A663 /* Serialization.swift */,
 				5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */,
 				5BEDD8C720527AC80038D360 /* MoyaPromise.h */,
 				5BEDD8C820527AC80038D360 /* Info.plist */,
@@ -223,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B8B9A3320548ACB0082C265 /* MoyaPromise.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1F0C5F2054BB660016A663 /* MoyaProvider+Promise.swift in Sources */,
 				5B1F0C502054B74D0016A663 /* DataService + Default.swift in Sources */,
+				5B1F0C5A2054BB660016A663 /* DataServiceExtensions.swift in Sources */,
+				5B1F0C602054BB660016A663 /* Protocols.swift in Sources */,
+				5B1F0C5C2054BB660016A663 /* RequestPolicy.swift in Sources */,
+				5B1F0C5B2054BB660016A663 /* Plugins.swift in Sources */,
+				5B1F0C5D2054BB660016A663 /* Serialization.swift in Sources */,
+				5B1F0C5E2054BB660016A663 /* SampleDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
