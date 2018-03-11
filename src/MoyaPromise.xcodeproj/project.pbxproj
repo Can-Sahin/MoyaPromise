@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1F0C502054B74D0016A663 /* DataService + Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */; };
 		5B8B9A3320548ACB0082C265 /* MoyaPromise.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5B8B9A3220548ACB0082C265 /* MoyaPromise.podspec */; };
 		5BEDD8CE20527AC80038D360 /* MoyaPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BEDD8C420527AC80038D360 /* MoyaPromise.framework */; };
 		5BEDD8D320527AC80038D360 /* MoyaPromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDD8D220527AC80038D360 /* MoyaPromiseTests.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		0FF957F0C0184E6C3819E8CB /* Pods_MoyaPromise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6E018656667430D3C671C9 /* Pods-MoyaPromise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaPromise.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoyaPromise/Pods-MoyaPromise.release.xcconfig"; sourceTree = "<group>"; };
+		5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataService + Default.swift"; sourceTree = "<group>"; };
 		5B8B9A3220548ACB0082C265 /* MoyaPromise.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoyaPromise.podspec; sourceTree = "<group>"; };
 		5BEDD8C420527AC80038D360 /* MoyaPromise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoyaPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEDD8C720527AC80038D360 /* MoyaPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoyaPromise.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		5BEDD8C620527AC80038D360 /* MoyaPromise */ = {
 			isa = PBXGroup;
 			children = (
+				5B1F0C4F2054B74D0016A663 /* DataService + Default.swift */,
 				5BEDD8C720527AC80038D360 /* MoyaPromise.h */,
 				5BEDD8C820527AC80038D360 /* Info.plist */,
 			);
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1F0C502054B74D0016A663 /* DataService + Default.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B2633A27D56E1B436A8DC4E6 /* Pods-MoyaPromiseTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoyaPromiseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -529,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C58C01ABBA8F4B336C48BD15 /* Pods-MoyaPromiseTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoyaPromiseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
