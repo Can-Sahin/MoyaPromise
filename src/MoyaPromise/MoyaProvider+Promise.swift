@@ -12,7 +12,7 @@ import Moya
 
 // Copy of Moya.CancellableWrapper class. Moya made it internal so this is the identical copy for the module
 public class CancellableWrapper: Cancellable {
-    internal var innerCancellable: Cancellable = SimpleCancellable()
+    public var innerCancellable: Cancellable = SimpleCancellable()
     
     public var isCancelled: Bool { return innerCancellable.isCancelled }
     
