@@ -49,7 +49,7 @@ public class CustomDataService<T:OAuth2TargetWrapped> : DataServiceProtocol{
         // Implement a custom logic for your request.
         // Here is an dirty example of getting a OAuth token and making a request with it.
         
-        let cancelWrapper = CancellableWrapper()
+        let cancelWrapper = MoyaPromise.CancellableWrapper()
 
         let promise = YourOAuthLibraryGetTokenFunction().then {token -> Promise<Moya.Response> in
             if token == "someToken"{

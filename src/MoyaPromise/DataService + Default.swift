@@ -21,10 +21,10 @@ open class DefaultDataService<Target: TargetType> : DataServiceProtocol {
 
     public var moyaProvider: MoyaProvider<Target>
     
-    init(){
+    public init(){
         self.moyaProvider = MoyaProvider<Target>()
     }
-    init(moyaProvider: MoyaProvider<Target>){
+    public init(moyaProvider: MoyaProvider<Target>){
         self.moyaProvider = moyaProvider
     }
 }

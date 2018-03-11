@@ -19,6 +19,7 @@ public class CancellableWrapper: Cancellable {
     public func cancel() {
         innerCancellable.cancel()
     }
+    public init() {}
 }
 // Copy of Moya.SimpleCancellable class. Moya made it internal so this is the identical copy for the module
 public class SimpleCancellable: Cancellable {
@@ -26,12 +27,13 @@ public class SimpleCancellable: Cancellable {
     public func cancel() {
         isCancelled = true
     }
+    public init() {}
 }
 
 /// Simply a 'custom' Promise holding a cancellable token
 public class MoyaCancellablePromise<T>{
     private let corePromise: Promise<T>
-    var cancelToken: Cancellable = SimpleCancellable()
+    public var cancelToken: Cancellable = SimpleCancellable()
     
     public func cancel(){
         cancelToken.cancel()
@@ -56,13 +58,12 @@ public class MoyaCancellablePromise<T>{
     public init(error: Swift.Error) {
         self.corePromise = Promise.init(error: error);
     }
-//
     public var promise: Promise<T>{
         return self.corePromise;
     }
     
     /// 'Recover' implementation with CancelledError check
-    internal func recover(on q: DispatchQueue = .main, policy: CatchPolicy = .allErrorsExceptCancellation, execute body: @escaping (Swift.Error, Cancellable?, @escaping (Cancellable) -> Void) throws -> Promise<T>) -> MoyaCancellablePromise<T>{
+    public func recover(on q: DispatchQueue = .main, policy: CatchPolicy = .allErrorsExceptCancellation, execute body: @escaping (Swift.Error, Cancellable?, @escaping (Cancellable) -> Void) throws -> Promise<T>) -> MoyaCancellablePromise<T>{
         let recoveredPromise = self.corePromise.recover(on: q, policy: policy) { (error) -> Promise<T> in
             if self.isCancelled{
                 throw PMKError.cancelled
@@ -84,7 +85,7 @@ public class MoyaCancellablePromise<T>{
 public extension MoyaProvider {
     
     /// Promise value of moya request
-    func requestPromise(target: Target,
+    public func requestPromise(target: Target,
                         queue: DispatchQueue? = nil,
                         progress: Moya.ProgressBlock? = nil) -> MoyaCancellablePromise<Moya.Response>{
         

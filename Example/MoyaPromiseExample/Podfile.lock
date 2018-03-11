@@ -5,7 +5,7 @@ PODS:
   - Moya/Core (11.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - MoyaPromise (0.0.1):
+  - MoyaPromise (0.0.2):
     - Alamofire (~> 4.7.0)
     - Moya (~> 11.0.1)
     - PromiseKit (~> 6.2.1)
@@ -30,7 +30,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
-  MoyaPromise: 7bbc9da792235e816bdbecd9ee70798c3f660389
+  MoyaPromise: 233bf3b60c8694b60b505f366a1eafeef111a901
   PromiseKit: edaca6f0a7ed73b08c287600537d13867a7fabc7
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
