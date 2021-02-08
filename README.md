@@ -38,6 +38,11 @@ Then run `pod install`.
 
 Don't forget to
 import the framework to swift files like `import MoyaPromise`.
+### SwiftPM
+MoyaPromise ban be installed via the official Swift Package Manager.
+
+In Xcode:  File -> Swift Packages -> Add Package Dependency...
+and add https://github.com/Can-Sahin/MoyaPromise.git.
 
 # Example
 
