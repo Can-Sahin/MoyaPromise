@@ -1,22 +1,17 @@
 // swift-tools-version:5.3
-// s.name         = "MoyaPromise"
-// s.version      = "1.0.0"
-// s.summary      = "PromiseKit-oriented 'DataService' layer on top of Moya"
-// s.description  = <<-DESC
-//    A 'DataService' layer implemented with PromiseKit on the top of Moya with extra functionalities using the power of Promis
-// DESC
-//  s.homepage     = "https://github.com/Can-Sahin/MoyaPromise"
-//  s.license = { :type => "MIT", :file => "LICENSE" }
-//  s.author             = { "Can-Sahin" => "cann2005@gmail.com" }
-//  s.swift_version = "4.0"
-//  s.source       = { :git => "https://github.com/Can-Sahin/MoyaPromise.git", :tag => "#{s.version}" }
-//  s.source_files  = 'src/MoyaPromise/*.swift'
 
 
 import PackageDescription
 
 let package = Package(
     name: "MoyaPromise",
+    version: "1.0.0",
+    summary: "PromiseKit-oriented 'DataService' layer on top of Moya",
+    description: "A 'DataService' layer implemented with PromiseKit on the top of Moya with extra functionalities using the power of Promise",
+    homepage: "https://github.com/Alamofire/Alamofire.git",
+    license: "MIT",
+    author: "Can-Sahin <cann2005@gmail.com>",
+    source_files: "src/MoyaPromise/*.swift",
     platforms: [
         .iOS(.v8)
     ],
